@@ -3,7 +3,6 @@ title = "Mafrinha"
 theme = "manis"
 
 # Copyright notice. Note: You can use HTML tag here
-copyright = "&copy; 2019 Yurizal Susanto"
 pluralizeListTitles = false
 
 # Minimum number of posts before paginate navigation show up
