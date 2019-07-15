@@ -1,0 +1,26 @@
+stages: 
+  - build
+  - deploy
+
+cache:
+  paths:
+    - public
+
+build:
+  image: orus/hugo-builder:latest
+  stage: build
+  only:
+    - master
+  before_script:
+   - git submodule sync --recursive
+   - git submodule update --init --recursive
+  script:
+    - hugo
+
+deploy:
+  image: xueshanf/awscli:latest
+  stage: deploy
+  only:
+    - master
+  script:
+    - aws s3 sync public s3://mafrinha.com
