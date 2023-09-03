@@ -1,0 +1,76 @@
+:root {
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+  line-height: 1.25rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: 2rem auto 2rem auto;
+}
+
+header .header__title {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+nav a {
+  padding: 0 1rem; 
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.posts__highlight {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+
+main section.hero {
+  display: flex;
+  margin-bottom: 4rem; 
+}
+
+#avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 2rem;
+}
+
+li time {
+  color: #ccc;
+  margin-right: 1rem;
+  margin-top: 2px;
+}
+
+li.post {
+  display: flex;
+}
+
+li.post a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li.post p {
+ color: #3c3c3c; 
+}
+
+li.post h2 {
+  margin: 0;
+}

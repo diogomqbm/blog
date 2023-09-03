@@ -1,0 +1,31 @@
+<html>
+  <head>
+      <title>
+        {{#global_content}}
+          {{name}}
+        {{/global_content}}
+        -
+        {{#metadata}}
+          {{title}}
+        {{/metadata}}
+      </title>
+    {{#metadata}}
+      <meta name="description" content="{{description}}">
+    {{/metadata}}
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body>
+    <header>
+      <a class="header__title" href="/">
+        {{name}}
+      </a>
+      <nav>
+        <a href="/posts">Posts</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+  </body>
+</html>
