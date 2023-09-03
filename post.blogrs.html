@@ -17,7 +17,9 @@
   <body>
     <header>
       <a class="header__title" href="/">
-        {{name}}
+        {{#global_content}}
+          {{name}}
+        {{/global_content}}
       </a>
       <nav>
         <a href="/posts">Posts</a>
