@@ -2,7 +2,7 @@
 title = "Test Post 3"
 description = "This is a test post. Let's see how it goes"
 author = "Diogo Mafra"
-date = "Sat Sep  2 15:27:22 -03 2023"
+date = "2023-09-04"
 ---
 
 # Test Post 3
